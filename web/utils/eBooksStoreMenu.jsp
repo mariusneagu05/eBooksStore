@@ -1,7 +1,6 @@
 <%-- 
     Document   : eBooksStoreMainPage.jsp
-    Author     : gheorgheaurelpacurar
-    Copyright  : gheorgheaurelpacurar
+    Author     : MariusNeagu
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -29,12 +28,19 @@
             </c:when>
         </c:choose>        
         <c:choose>
-            <c:when test="${actualUserRole == 'user'|| actualUserRole == 'admin'}">
+            <c:when test="${actualUserRole == 'admin'}">
                 <li><a href="#">Orders</a>
                     <ul>
-                        <%-- <li><a href="./eBooksStoreOrderBookPage.jsp">Orders</a></li> --%>
-                        <%-- <li><a href="./eBooksStoreReportsPage.jsp">Orders</a></li> --%>
-                        <li><a href="./eBooksStoreMainPage.jsp">Sold eBooks</a></li>
+                        <li><a href="./eBooksStoreSoldBooks.jsp">Sold eBooks</a></li>
+                    </ul>
+                </li>    
+            </c:when>
+        </c:choose>  
+         <c:choose>
+            <c:when test="${actualUserRole == 'user'}">
+                <li><a href="#">Orders</a>
+                    <ul>
+                        <li><a href="./eBooksStoreBoughtBooks.jsp">Bought eBooks</a></li>
                     </ul>
                 </li>    
             </c:when>

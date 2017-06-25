@@ -50,7 +50,6 @@ public class eBooksStoreAdminUsersServlet extends HttpServlet {
                 String username = request.getParameter("admin_users_username");
                 String user_password = request.getParameter("admin_users_password");
                 String role = request.getParameter("admin_user_role");
-                //int transporterID = -1;
                 int ID = -1;
                 // declare specific variables
                 ResultSet resultSet = null;

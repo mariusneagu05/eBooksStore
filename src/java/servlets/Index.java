@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author gheorgheaurelpacurar
+ * @author MariusNeagu
  * Servlet class implements authentication and authorization process for eBooksStore
  * java web application. Session variable "validUser" is used to keep the value
  * of an authenticated user. The value should be true. If the variable has value false or 

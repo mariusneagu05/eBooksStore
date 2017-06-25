@@ -33,7 +33,7 @@
                         SELECT EBOOKS_AUTHORS.ID, EBOOKS_AUTHORS.ID_AUTHORS, AUTHORS.NAME, EBOOKS.ISBN, EBOOKS.TITLE, EBOOKS.PRICE
                         FROM AUTHORS, EBOOKS, EBOOKS_AUTHORS
                         WHERE AUTHORS.ID = EBOOKS_AUTHORS.ID_AUTHORS
-                        AND EBOOKS_AUTHORS.ISBN = EBOOKS.ISBN
+                        AND EBOOKS_AUTHORS.ISBN = EBOOKS.ISBN ORDER BY EBOOKS_AUTHORS.ID
                     </sql:query>
 
                     <table border="1" width="100%">
