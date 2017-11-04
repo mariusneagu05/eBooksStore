@@ -1,2 +1,2 @@
 # eBooksStore
-This is my Java WebApp
+This is my WebApp developed with JSP, Servlets, CSS and Java DB.
