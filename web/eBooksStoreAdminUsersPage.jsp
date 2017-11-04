@@ -12,7 +12,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Electronic Books Store Manage Users</title>
+        <title>Electronic Books Store - Manage Users</title>
         <link rel="stylesheet" type="text/css" href="./css/eBooksStoreCSS.css">
     </head>
 <body>
